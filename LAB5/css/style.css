@@ -1,0 +1,13 @@
+.p>img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: yellow;
+    box-shadow: inset 5px green;
+}
+.p>img:hover{
+    box-shadow:inset;
+    background-color: aqua;
+}
