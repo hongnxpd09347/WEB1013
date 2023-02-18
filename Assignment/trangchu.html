@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THPT Ba Tơ</title>
+
+    <style>
+    header{
+        background-image: url(http://quangngai.edu.vn/wp-content/uploads/2021/06/BANNER-SGD-2.png);
+        padding-bottom: 10%;
+        background-size: 100% 100%;
+    }
+    *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    }
+    body{
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+        
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    
+    .nav{
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        height: 40px;
+        background: linear-gradient(to right,#255cf4,#0374ff); 
+        margin-bottom: 5px;
+
+        border-left: 0px solid black;
+        border-right: 0px solid black;
+        box-shadow: 0 0 4px #dadde1;
+    }
+    .nav ul{
+        list-style: none;
+    }
+    .nav ul li{
+        float: left;
+        padding: 0 25px;
+        border-right: 1px solid gray;
+    }
+    .nav ul li:hover{
+        background: #1c86ff;
+    }
+    .nav ul li a{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-family: roboto;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .nav .search{
+        margin-left: 100px;
+    }
+    .nav .search input{
+        border-radius: 5px 0 0 5px;
+        border: none;
+        outline: none;
+        margin: 0px;
+        padding: 7px 10px;
+    }
+    .nav .search button{
+        padding: 7px 10px;
+        border: none;
+        outline: none;
+        background: #1c86ff;
+        color: #fff;
+        margin-left: -5px;
+    }
+    .hi1{
+        position: relative;
+        margin-top: -3px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        text-transform: uppercase;
+        padding: 4px 0 0 0;
+        font-size: 15px;
+        background-color: rgb(221, 215, 215);
+        
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Roboto Condensed',sans-serif;
+    }
+    .line1{
+        background: rgba(0, 0, 0, 0) url(http://quangngai.edu.vn/wp-content/themes/vtkEducation/images/bg_line.png) repeat-x scroll 0 0;
+        height: 5px;
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    aside{
+        display: flex;
+        flex-direction: column;
+        float: right;
+        width: 350px;
+        border-left: 1px solid #16bbf1;
+    }
+    h3{
+        margin: 0px;
+        font-size: 18px;
+        padding: 10px 15px;
+        background: #1c86ff;
+        color: #fff;
+        text-shadow: 2px 2px 5px red;
+    }
+    .menudoc{
+        float: right;
+    }
+    .menudoc ul{
+        list-style: none;
+    }
+    .menudoc ul li{
+        background-color: white;
+
+        margin-left: -25px ;
+        margin-bottom: 4px;
+        padding: 3px;
+        border: 1px solid #16bbf1;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    .menudoc ul li:hover{
+        background: rgba(0, 81, 255, 0.416);
+        margin-left: 20px;
+        transition: all .2s linear;
+    }
+    footer{
+        width: 100%;
+        clear: both;
+        background: #1c86ff;
+        color: #fff;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .ft1{
+        float:left;
+        width: 400px;
+        margin-bottom: 25px;
+    }
+    footer h3{
+        padding: 15px;
+        font-size: 20px;
+    }
+    .ft3{
+        width: 100%;
+        clear: both;
+        height: 40px;
+        background: aqua;
+    }
+    .ft3 p{
+        color: white;
+        font-size: 15px;
+        font-variant: small-caps;
+        text-align: center;
+    }
+    iframe{
+        width: 299px;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .body1{
+        border: 0px solid #fff;
+        width: 350px;
+        margin: 0px 5px;
+        padding: 7px 10px;
+    }
+    .body2{
+        width: 328px;
+        margin: 0px 5px;
+        padding: 7px 10px;
+    }
+    .main{
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <nav class="nav">
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Tra cứu</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        <div class="search">
+            <input type="search" placeholder="Tìm kiếm tại đây..."/>
+            <button>Tìm kiếm</button>
+        </div>
+    </nav>
+    
+    <div>
+        <div class="hi1">
+            <marquee>Chào mừng các bạn đến với website của trường THPT Ba Tơ    </marquee>
+        </div>
+    </div>
+    <div class="line1"></div>
+    <aside class="menudoc">
+        <div>
+            <h3>Giới thiệu nhà trường</h3>
+            <ul>
+                <li>Giới thiệu chung</li>
+                <li>Cơ sở vật chất</li>
+                <li>...</li>
+                <li>...</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Tin tức và sự kiện</h3>
+            <ul>
+                <li>Tin tức</li>
+                <li>Sự kiện</li>
+                <li>...</li>
+                <li>...</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Video</h3>
+            <iframe src="https://www.youtube.com/embed/wPqw1JblAmU" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        </div>
+        <div>
+        <h3>Fanpage</h3>
+        <iframe src="https://www.facebook.com/plugins/page.php?
+            href=https%3A%2F%2Fwww.facebook.com%2Ftruongthptbato%2F&
+            tabs=timeline&width=299&height=500&small_header=true&adapt
+            _container_width=true&hide_cover=false&show_facepile=true&appId" 
+            width="299" height="500" style="border:none;overflow:hidden" 
+            scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; 
+            clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </aside>
+    <div class="main">
+        <div class="body1">
+            <a href=""></a>
+            <h4>Chương trình “Tết Sum vầy – Xuân gắn kết”, 
+                “Phiên chợ Tết” năm 2023 và phiếu mua hàng “không đồng”</h4>
+            <a>(www.quangngai.edu.vn) Sáng 06/02/2023, Sở Giáo dục và Đào tạo tổ chức công bố quyết định 
+                thanh tra tại Phòng Giáo dục và Đào tạo thị xã Đức Phổ theo Kế hoạch thanh tra năm học 2022-2023. 
+                Tham dự cuộc họp, có các thành viên Đoàn thanh tra, Trưởng phòng Phòng Giáo dục và Đào tạo thị xã 
+                và đại diện các đơn vị, bộ phận thuộc Phòng Giáo dục và Đào tạo có 
+                liên quan. (Ảnh: Cuộc họp công... ...</a>
+        </div>
+        <div class="body2">
+            <a href=""></a>
+            <ul class="newsevent-slider-more">
+                <li class="newsevent-item" data-target="http://quangngai.edu.vn/to-chuc-ky-thi-chon-hoc-sinh-gioi-cap-tinh-lop-12-nam-hoc-2022-2023.html" data-slide-to="0">
+<a href="http://quangngai.edu.vn/to-chuc-ky-thi-chon-hoc-sinh-gioi-cap-tinh-lop-12-nam-hoc-2022-2023.html">
+<div class="nem-item-thumb"><img src="http://quangngai.edu.vn/wp-content/uploads/Thumbcache/HSG12-q1y5vt10ax1pen30msdn4j2eqqm3p0fsqwm4pgtu00.jpg" alt="Tổ chức Kỳ thi chọn học sinh giỏi cấp tỉnh lớp 12 năm học 2022 – 2023" title="Tổ chức Kỳ thi chọn học sinh giỏi cấp tỉnh lớp 12 năm học 2022 – 2023"></div>
+<h2 class="nem-item-title">Tổ chức Kỳ thi chọn học sinh giỏi cấp tỉnh lớp 12 năm học 2022 – 2023</h2>
+</a>
+</li>
+<li class="newsevent-item" data-target="http://quangngai.edu.vn/cong-bo-quyet-dinh-thanh-tra-tai-phong-giao-duc-va-dao-tao-thi-xa-duc-pho.html" data-slide-to="1">
+<a href="http://quangngai.edu.vn/cong-bo-quyet-dinh-thanh-tra-tai-phong-giao-duc-va-dao-tao-thi-xa-duc-pho.html">
+<div class="nem-item-thumb"><img src="http://quangngai.edu.vn/wp-content/uploads/Thumbcache/Thanh-tra-q1r17wpcb2bnkmju5ahx6oonbmw7czondno6a6x0yo.jpg" alt="Công bố quyết định thanh tra tại Phòng Giáo dục và Đào tạo thị xã Đức Phổ&nbsp;" title="Công bố quyết định thanh tra tại Phòng Giáo dục và Đào tạo thị xã Đức Phổ&nbsp;"></div>
+<h2 class="nem-item-title">Công bố quyết định thanh tra tại Phòng Giáo dục và Đào tạo thị xã Đức Phổ&nbsp;</h2>
+</a>
+</li>
+<li class="newsevent-item" data-target="http://quangngai.edu.vn/tong-ket-cuoc-thi-khoa-hoc-ki-thuat-hoc-sinh-trung-hoc-cap-tinh-nam-hoc-2022-2023.html" data-slide-to="2">
+<a href="http://quangngai.edu.vn/tong-ket-cuoc-thi-khoa-hoc-ki-thuat-hoc-sinh-trung-hoc-cap-tinh-nam-hoc-2022-2023.html">
+<div class="nem-item-thumb"><img src="http://quangngai.edu.vn/wp-content/uploads/Thumbcache/KHKT-q1lhyhm7dygc4mcbvji3fvfex7ridnphsj2b7j0mjk.png" alt="Tổng kết Cuộc thi Khoa học kĩ thuật học sinh trung học cấp tỉnh năm học 2022 -2023" title="Tổng kết Cuộc thi Khoa học kĩ thuật học sinh trung học cấp tỉnh năm học 2022 -2023"></div>
+<h2 class="nem-item-title">Tổng kết Cuộc thi Khoa học kĩ thuật học sinh trung học cấp tỉnh năm học 2022 -2023</h2>
+</a>
+</li>
+<li class="newsevent-item" data-target="http://quangngai.edu.vn/chuong-trinh-tet-sum-vay-xuan-gan-ket-phien-cho-tet-nam-2023-va-phieu-mua-hang-khong-dong.html" data-slide-to="3">
+<a href="http://quangngai.edu.vn/chuong-trinh-tet-sum-vay-xuan-gan-ket-phien-cho-tet-nam-2023-va-phieu-mua-hang-khong-dong.html">
+<div class="nem-item-thumb"><img src="http://quangngai.edu.vn/wp-content/uploads/Thumbcache/CD0-q0tn56q7wihq2dhy4jzgfwskeuhlk01fno7l26s0tc.jpg" alt="Chương trình “Tết Sum vầy – Xuân gắn kết”, “Phiên chợ Tết” năm 2023 và phiếu mua hàng “không đồng”" title="Chương trình “Tết Sum vầy – Xuân gắn kết”, “Phiên chợ Tết” năm 2023 và phiếu mua hàng “không đồng”"></div>
+<h2 class="nem-item-title">Chương trình “Tết Sum vầy – Xuân gắn kết”, “Phiên chợ Tết” năm 2023 và phiếu mua hàng “không đồng”</h2>
+</a>
+</li>
+<li class="newsevent-item active" data-target="http://quangngai.edu.vn/hoi-nghi-tong-ket-hoi-thi-giao-duc-an-toan-giao-thong-nam-2022.html" data-slide-to="4">
+<a href="http://quangngai.edu.vn/hoi-nghi-tong-ket-hoi-thi-giao-duc-an-toan-giao-thong-nam-2022.html">
+<div class="nem-item-thumb"><img src="http://quangngai.edu.vn/wp-content/uploads/Thumbcache/ATGT1-q0tmv20u8smgxo7pa6c7kgtpxcf6lftkxj36utsrvk.png" alt="Hội nghị tổng kết Hội thi Giáo dục an toàn giao thông năm 2022" title="Hội nghị tổng kết Hội thi Giáo dục an toàn giao thông năm 2022"></div>
+<h2 class="nem-item-title">Hội nghị tổng kết Hội thi Giáo dục an toàn giao thông năm 2022</h2>
+</a>
+</li>
+<li class="newsevent-item" data-target="http://quangngai.edu.vn/hoi-nghi-so-ket-hoc-ky-i-nam-hoc-2022-2023.html" data-slide-to="5">
+<a href="http://quangngai.edu.vn/hoi-nghi-so-ket-hoc-ky-i-nam-hoc-2022-2023.html">
+<div class="nem-item-thumb"><img src="http://quangngai.edu.vn/wp-content/uploads/Thumbcache/SKHK1-q0pzruljk6dx114h4ru3juc1zise41wefmlvrt0heo.jpg" alt="Hội nghị sơ kết học kỳ I, năm học 2022-2023" title="Hội nghị sơ kết học kỳ I, năm học 2022-2023"></div>
+<h2 class="nem-item-title">Hội nghị sơ kết học kỳ I, năm học 2022-2023</h2>
+</a>
+</li>
+</ul>
+        </div>
+    </div>
+    <footer>
+        <div class="ft1">
+            <h3>Trường THPT Ba Tơ</h3>
+            <p>Địa chỉ: Đường 30 Tháng 10, Ba Tơ, Việt Nam</p>
+            <p>Email</p>
+            <p>Website</p>
+            <p>Số điện thoại</p>
+        </div>
+        <div class="ft1">
+            <h3>Đăng kí nhận thông tin</h3>
+            <p>Đăng kí email ...</p>
+        </div>
+    </footer>
+</body>
+</html>
