@@ -1,0 +1,332 @@
+header{
+    background-image: url(http://quangngai.edu.vn/wp-content/uploads/2021/06/BANNER-SGD-2.png);
+    padding-bottom: 10%;
+    background-size: 100% 100%;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    height: 40px;
+    background: linear-gradient(to right,#255cf4,#0374ff); 
+    margin-bottom: 5px;
+
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+    box-shadow: 0 0 4px #dadde1;
+
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    float: left;
+    padding: 0px 25px;
+    border-right: 1px solid gray;
+}
+.nav ul li:hover{
+    background: #1c86ff;
+}
+.nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+.nav .search{
+    margin-left: 100px;
+}
+.nav .search input{
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: 7px 10px;
+}
+.nav .search button{
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+    background: #1c86ff;
+    color: #fff;
+    margin-left: -5px;
+}
+.hi1{
+    position: relative;
+    margin-top: -3px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    text-transform: uppercase;
+    padding: 4px 0 0 0;
+    font-size: 15px;
+    background-color: rgb(221, 215, 215);
+    
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+.line1{
+    background: rgba(0, 0, 0, 0) url(http://quangngai.edu.vn/wp-content/themes/vtkEducation/images/bg_line.png) repeat-x scroll 0 0;
+    height: 5px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+aside{
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 300px;
+    border: 1px solid #16bbf1;
+}
+h3{
+    margin: 0px;
+    font-size: 18px;
+    padding: 10px 15px;
+    background: #1c86ff;
+    color: #fff;
+    text-shadow: 2px 2px 5px red;
+}
+.menudoc{
+    float: right;
+}
+.menudoc ul{
+    list-style: none;
+}
+.menudoc ul li{
+    width: 270px;
+    background-color: white;
+    margin-left: -25px ;
+    margin-bottom: 4px;
+    padding: 3px;
+    border: 1px solid #16bbf1;
+    border-radius: 3px;
+    overflow: hidden;
+    
+    margin-bottom: 4px;
+    padding: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.menudoc div ul li a{
+    text-decoration: none;
+    height: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed',sans-serif;
+    text-transform: uppercase;
+}
+.contentlist1 a img{
+    width: 30px;
+    border-radius: 50%;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    margin-right: 10px;
+}
+.contentlist2 a img{
+    width: 30px;
+    border-radius: 50%;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    margin-right: 10px;
+}
+.contentlist1{
+    background: linear-gradient(to bottom, #1696f1, #1678f1);
+}
+.contentlist1 a{
+    color: white;
+}
+.contentlist2 a{
+    color: #1678f1;
+}
+.menudoc div ul li:hover{
+    padding-left: 20px;
+    transition: all 0.4s ease 0s;
+}
+
+.subnav { 
+    display: inline-block;
+    position: relative;
+    line-height: 40px;
+}
+
+.subnav .subnavbtn { 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 3px;
+    background-color: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed',sans-serif;
+    
+    
+}
+.subnav-content {
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    color: #111;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+.subnav-content .a {
+    display:block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 2px 0px 2px 10px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed',sans-serif;
+
+}
+.subnav-content a:hover {
+    background-color: #00a6ff;
+    color: rgb(0, 0, 0);
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+
+
+}
+footer{
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    clear: both;
+    background: #1c86ff;
+    color: #fff;
+
+    color: #e9fafe;
+}
+.ft1{
+    float:left;
+    width: 400px;
+    margin-bottom: 25px;
+}
+footer h3{
+    padding: 15px;
+    font-size: 20px;
+}
+.ft3{
+    width: 100%;
+    clear: both;
+    height: 40px;
+    background: aqua;
+}
+.ft3 p{
+    color: white;
+    font-size: 15px;
+    font-variant: small-caps;
+    text-align: center;
+}
+iframe{
+    width: 298.4px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.body1{
+    border: 0px solid #fff;
+    width: 350px;
+
+    text-decoration: none;
+}
+.body2{
+    width: 330px;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+.main{
+    width: 1115x;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.body2 ul{
+    
+}
+.body2 ul li{
+
+}
+.body2 ul li a{
+    display: block;
+    overflow: hidden;
+}
+.body2 div h2{
+    margin: 0px;
+    font-size: 18px;
+    padding: 10px 15px;
+    background: #1c86ff;
+    color: #fff;
+}
+.body2 div h2 a{
+    text-decoration: none;
+    color: white;
+}
+.body2 ul li a img{
+    padding: 1px;
+    border-width: 1px;
+    border-style: solid;
+    
+}
+.item{
+    padding: 6px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background: #f5f5f5;
+}
+.item a{
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+}
+.item a h2{
+    padding: 5px 5px 5px 130px;
+    margin: 0;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
