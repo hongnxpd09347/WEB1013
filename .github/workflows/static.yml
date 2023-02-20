@@ -1,42 +1,119 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
-
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THPT Ba Tơ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <nav class="nav">
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li>       
+                    <div class="subnav">
+                        <button class="subnavbtn">Giới thiệu<i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a class="a" href="#cocau">Cơ cấu tổ chức</a>
+                            <a class="a" href="#thuvien">Thư viện</a>
+                        </div>   
+                    </div> 
+                </li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Tra cứu</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        <div class="search">
+            <input type="search" placeholder="Tìm kiếm tại đây..."/>
+            <button>Tìm kiếm</button>
+        </div>
+    </nav>
+    
+    <div>
+        <div class="hi1">
+            <marquee>Chào mừng các bạn đến với website của trường THPT Ba Tơ    </marquee>
+        </div>
+    </div>
+    <div class="line1"></div>
+    <div class="main">
+    <aside class="menudoc">
+        <div>
+            <h3>Giới thiệu nhà trường</h3>
+            <ul>
+                <li class="contentlist1"><a href=""><img src="http://quangngai.edu.vn/wp-content/themes/vtkEducation/images/icon/1.png">Giới thiệu chung</a></li>
+                <li class="contentlist2"><a href=""><img src="http://quangngai.edu.vn/wp-content/themes/vtkEducation/images/icon/2.png">Cơ sở vật chất</a></li>
+                <li class="contentlist1"><a href=""><img src="http://quangngai.edu.vn/wp-content/themes/vtkEducation/images/icon/3.png">Thư viện</a></li>
+                <li class="contentlist2"><a href=""><img src="http://quangngai.edu.vn/wp-content/themes/vtkEducation/images/icon/4.png">Lịch</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Tin tức và sự kiện</h3>
+            <ul>
+                <li class="contentlist1"><a href=""><img src="http://quangngai.edu.vn/wp-content/themes/vtkEducation/images/icon/5.png">Tin tức</a></li>
+                <li class="contentlist2"><a href=""><img src="http://quangngai.edu.vn/wp-content/themes/vtkEducation/images/icon/6.png">Sự kiện</a></li>
+                <li class="contentlist1"><a href=""><img src="http://quangngai.edu.vn/wp-content/themes/vtkEducation/images/icon/7.png">Lịch</a></li>
+                <li class="contentlist2"><a href=""><img src="http://quangngai.edu.vn/wp-content/themes/vtkEducation/images/icon/8.png">Dự kiến</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Video</h3>
+            <iframe src="https://www.youtube.com/embed/wPqw1JblAmU" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+        </div>
+        <div>
+        <h3>Fanpage</h3>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftruongthptbato%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </aside>
+    <div class="body2">
+        <div>
+            <h2><i class="fa fa-list-alt ico-title"></i> <a href="">Tin tức - Sự kiện</a></h2>
+        </div>
+        <ul>
+            <li class="item" data-target="http://quangngai.edu.vn/to-chuc-ky-thi-chon-hoc-sinh-gioi-cap-tinh-lop-12-nam-hoc-2022-2023.html" data-slide-to="0">
+                <a href="http://quangngai.edu.vn/to-chuc-ky-thi-chon-hoc-sinh-gioi-cap-tinh-lop-12-nam-hoc-2022-2023.html">
+                    <div><img align="left" src="http://quangngai.edu.vn/wp-content/uploads/Thumbcache/HSG12-q1y5vt10ax1pen30msdn4j2eqqm3p0fsqwm4pgtu00.jpg" alt="Tổ chức Kỳ thi chọn học sinh giỏi cấp tỉnh lớp 12 năm học 2022 – 2023" title="Tổ chức Kỳ thi chọn học sinh giỏi cấp tỉnh lớp 12 năm học 2022 – 2023"></div>
+                    <h2 class="title1">Tổ chức Kỳ thi chọn học sinh giỏi cấp tỉnh lớp 12 năm học 2022 – 2023</h2>
+                </a>
+            </li>
+            <li class="item" data-target="http://quangngai.edu.vn/cong-bo-quyet-dinh-thanh-tra-tai-phong-giao-duc-va-dao-tao-thi-xa-duc-pho.html" data-slide-to="1">
+                <a href="http://quangngai.edu.vn/cong-bo-quyet-dinh-thanh-tra-tai-phong-giao-duc-va-dao-tao-thi-xa-duc-pho.html">
+                    <div><img align="left" src="http://quangngai.edu.vn/wp-content/uploads/Thumbcache/Thanh-tra-q1r17wpcb2bnkmju5ahx6oonbmw7czondno6a6x0yo.jpg" alt="Công bố quyết định thanh tra tại Phòng Giáo dục và Đào tạo thị xã Đức Phổ&nbsp;" title="Công bố quyết định thanh tra tại Phòng Giáo dục và Đào tạo thị xã Đức Phổ&nbsp;"></div>
+                    <h2 class="title1">Công bố quyết định thanh tra tại Phòng Giáo dục và Đào tạo thị xã Đức Phổ&nbsp;</h2>
+                </a>
+            </li>   
+        </ul>
+    </div>  
+    <div class="body1">
+        <a href=""></a>
+        <h4>Chương trình “Tết Sum vầy – Xuân gắn kết”, 
+            “Phiên chợ Tết” năm 2023 và phiếu mua hàng “không đồng”</h4>
+        <a>(www.quangngai.edu.vn) Sáng 06/02/2023, Sở Giáo dục và Đào tạo tổ chức công bố quyết định 
+            thanh tra tại Phòng Giáo dục và Đào tạo thị xã Đức Phổ theo Kế hoạch thanh tra năm học 2022-2023. 
+            Tham dự cuộc họp, có các thành viên Đoàn thanh tra, Trưởng phòng Phòng Giáo dục và Đào tạo thị xã 
+            và đại diện các đơn vị, bộ phận thuộc Phòng Giáo dục và Đào tạo có 
+            liên quan. (Ảnh: Cuộc họp công... ...</a>
+    </div>
+    </div>
+    <footer>
+        <div class="ft1">
+            <h3>Trường THPT Ba Tơ</h3>
+            <p>Địa chỉ: Đường 30 Tháng 10, Ba Tơ, Việt Nam</p>
+            <p>Email</p>
+            <p>Website</p>
+            <p>Số điện thoại</p>
+        </div>
+        <div class="ft1">
+            <h3>Đăng kí nhận thông tin</h3>
+            <p>Đăng kí email ...</p>
+        </div>
+    </footer>
+</body>
+</html>
